@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pub Crawl Worthing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create.html">Create Pub Crawl</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Pub Crawl Worthing</h1>
+        <p>Discover and share the best pub crawls in Worthing!</p>
+
+        <div id="map" style="height: 400px; width: 100%;"></div>
+
+        <section id="pub-list">
+            <h2>Available Pubs</h2>
+        </section>
+
+        <section id="pub-crawls">
+            <h2>Your Pub Crawls</h2>
+        </section>
+
+        <div id="loading-spinner" style="display: none;">Loading...</div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@googlemaps/markerclustererplus@2.0.0/dist/markerclusterer.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"></script>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgl_xTAa2SPIUcEJ1-Jo4ZD29PLwJHZHE&callback=initMap&libraries=places"></script>
+</body>
+
+</html>
